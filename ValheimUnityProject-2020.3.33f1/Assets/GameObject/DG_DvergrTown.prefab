@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1362802840064259
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4249787385177780}
+  - component: {fileID: 114643661064539859}
+  - component: {fileID: 114672020672352774}
+  m_Layer: 0
+  m_Name: DG_DvergrTown
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4249787385177780
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362802840064259}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 120, z: -30}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114643661064539859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362802840064259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -187921205, guid: c1b78fa918b030faf1c1f6f6164daeb2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_algorithm: 0
+  m_maxRooms: 96
+  m_minRooms: 16
+  m_minRequiredRooms: 1
+  m_requiredRooms:
+  - dvergr_room_TREASURE
+  - dvergr_room_TREASURE2
+  m_alternativeFunctionality: 1
+  m_themes: 128
+  m_doorTypes:
+  - m_prefab: {fileID: 1903518082928703, guid: 95d60d658b52b1649a7951ef0454d1e4, type: 2}
+    m_connectionType: stone
+    m_chance: 1
+  - m_prefab: {fileID: 1903518082928703, guid: 95d60d658b52b1649a7951ef0454d1e4, type: 2}
+    m_connectionType: dvergr
+    m_chance: 0.5
+  - m_prefab: {fileID: 1462352805628432, guid: fbb0b565a241974479a933e850e88931, type: 2}
+    m_connectionType: dvergr
+    m_chance: 0.6
+  - m_prefab: {fileID: 1815995386572394, guid: d10ee836dbc92774e9352e6f472944b4, type: 2}
+    m_connectionType: dvergr
+    m_chance: 0.7
+  m_doorChance: 0.9
+  m_maxTilt: 10
+  m_tileWidth: 8
+  m_gridSize: 4
+  m_spawnChance: 1
+  m_campRadiusMin: 15
+  m_campRadiusMax: 32
+  m_minAltitude: 1
+  m_perimeterSections: 0
+  m_perimeterBuffer: 2
+  m_zoneCenter: {x: 0, y: 0, z: 0}
+  m_zoneSize: {x: 64, y: 256, z: 64}
+  m_useCustomInteriorTransform: 1
+  m_generatedSeed: 14550
+  m_generatedHash: 1451387950
+  m_originalPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &114672020672352774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362802840064259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1521249158, guid: c1b78fa918b030faf1c1f6f6164daeb2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_persistent: 1
+  m_distant: 0
+  m_type: 2
+  m_syncInitialScale: 0

@@ -1,0 +1,138 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1584023054480926
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4574965464021552}
+  - component: {fileID: 114403604843637672}
+  - component: {fileID: 114958229914787086}
+  m_Layer: 0
+  m_Name: LootSpawner_pineforest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4574965464021552
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584023054480926}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.73217773, y: 2.019, z: 0.16875076}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114403604843637672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584023054480926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1521249158, guid: c1b78fa918b030faf1c1f6f6164daeb2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_persistent: 1
+  m_distant: 0
+  m_type: 0
+  m_syncInitialScale: 0
+--- !u!114 &114958229914787086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584023054480926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 543775603, guid: c1b78fa918b030faf1c1f6f6164daeb2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_items:
+    m_drops:
+    - m_item: {fileID: 1100892788617237, guid: 3f491afee5afd1a4aa969011a33dd840, type: 2}
+      m_stackMin: 4
+      m_stackMax: 8
+      m_weight: 1
+    - m_item: {fileID: 1507122847257336, guid: 1ee4bb58048ed1c4f8150ef47574e10d, type: 2}
+      m_stackMin: 2
+      m_stackMax: 5
+      m_weight: 1
+    - m_item: {fileID: 1893101607437199, guid: b558da2ab3d91804ba7fcb326fb3c7c0, type: 2}
+      m_stackMin: 2
+      m_stackMax: 3
+      m_weight: 1
+    - m_item: {fileID: 1459779861243202, guid: eac4397b3e073a840816552c976d0aef, type: 2}
+      m_stackMin: 2
+      m_stackMax: 4
+      m_weight: 1
+    - m_item: {fileID: 1026065927377486, guid: c04e0435ed62fc04f907e259a932cc5a, type: 2}
+      m_stackMin: 1
+      m_stackMax: 2
+      m_weight: 1
+    - m_item: {fileID: 1490777942271442, guid: 86fc8e0143627604a9872968c2ae6306, type: 2}
+      m_stackMin: 1
+      m_stackMax: 3
+      m_weight: 1
+    - m_item: {fileID: 1377122602733612, guid: e134a5763611ed940991d1782c333c95, type: 2}
+      m_stackMin: 1
+      m_stackMax: 1
+      m_weight: 0.5
+    - m_item: {fileID: 1627836055333800, guid: 40375eeac76c21048aef7cf822816235, type: 2}
+      m_stackMin: 1
+      m_stackMax: 1
+      m_weight: 0.5
+    - m_item: {fileID: 1054002521002567, guid: 84f9b40f55c614f4d9ef8ab72c101c02, type: 2}
+      m_stackMin: 3
+      m_stackMax: 3
+      m_weight: 0.5
+    m_dropMin: 1
+    m_dropMax: 1
+    m_dropChance: 1
+    m_oneOfEach: 1
+  m_spawnEffect:
+    m_effectPrefabs:
+    - m_prefab: {fileID: 1454251571160918, guid: dc96b2eb40006ee48ab8a81da80a76d9, type: 2}
+      m_enabled: 1
+      m_variant: -1
+      m_attach: 0
+      m_inheritParentRotation: 0
+      m_inheritParentScale: 0
+      m_randomRotation: 0
+      m_scale: 0
+      m_childTransform:
+    - m_prefab: {fileID: 1183186311201077, guid: d5695f0b50a27204ea75024a6b20ecc5, type: 2}
+      m_enabled: 1
+      m_variant: -1
+      m_attach: 0
+      m_inheritParentRotation: 0
+      m_inheritParentScale: 0
+      m_randomRotation: 0
+      m_scale: 0
+      m_childTransform:
+    - m_prefab: {fileID: 1225136280001177, guid: e7dbbecc54180f143b4f04e8fbd73cf8, type: 2}
+      m_enabled: 1
+      m_variant: -1
+      m_attach: 0
+      m_inheritParentRotation: 0
+      m_inheritParentScale: 0
+      m_randomRotation: 0
+      m_scale: 0
+      m_childTransform:
+  m_respawnTimeMinuts: 0
+  m_spawnAtNight: 1
+  m_spawnAtDay: 1
+  m_spawnWhenEnemiesCleared: 1
+  m_enemiesCheckRange: 30
