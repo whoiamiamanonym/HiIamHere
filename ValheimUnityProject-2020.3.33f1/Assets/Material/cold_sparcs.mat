@@ -8,14 +8,14 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: cold_sparcs
-  m_Shader: {fileID: 4800000, guid: 29e27d7f5cb01fe43ae67645c8f85dd7, type: 2}
+  m_Shader: {fileID: 210, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _ALPHABLEND_ON _FADING_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 3000
   stringTagMap:
-  - RenderType: Transparent
+    RenderType: Transparent
   disabledShaderPasses:
   - ALWAYS
   m_SavedProperties:
@@ -30,6 +30,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -56,7 +60,7 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 1
     - _InvFade: 1
-    - _LightingEnabled: 0
+    - _LightingEnabled: 1
     - _Metallic: 0
     - _Mode: 2
     - _OcclusionStrength: 1

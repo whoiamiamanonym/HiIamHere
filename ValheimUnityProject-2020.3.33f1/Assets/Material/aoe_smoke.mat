@@ -8,18 +8,24 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: aoe_smoke
-  m_Shader: {fileID: 4800000, guid: b20716766730a9240942e7568cc759e1, type: 2}
+  m_Shader: {fileID: 210, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: GEOM_TYPE_FROND _ALPHABLEND_ON _FADING_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
+  disabledShaderPasses:
+  - ALWAYS
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - _AlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -29,6 +35,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: f3985df4b009a8c4c9c4d1cc62f5293c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -64,7 +74,7 @@ Material:
     - _HelpFlip: 0
     - _InvFade: 3
     - _LightNormalFactor: 0.79
-    - _LightingEnabled: 0
+    - _LightingEnabled: 1
     - _LocalAmbientLighting: 0
     - _Metallic: 0
     - _Mode: 2
